@@ -14,6 +14,23 @@ npm run preview  # http://localhost:4173
 
 Node 18+ 即可（开发机为 v24.14.0 / npm 11.9.0）。
 
+## 已发布 / 怎么让别人看
+
+线上地址：<https://xyvanlabs.github.io/prism-atelier/>（GitHub Pages，公开）
+
+| 方式 | 地址 | 适用 |
+|---|---|---|
+| 公网 | https://xyvanlabs.github.io/prism-atelier/ | 发给任何人，本机可关机 |
+| 局域网 | `npm run preview -- --host 0.0.0.0` → `http://<本机IP>:4173/` | 同 Wi-Fi 快速内测，不外发 |
+
+更新流程：改源码 → `git push` → `.github/workflows/deploy-pages.yml` 自动 `npm ci && npm run build` 并把 `dist/` 发到 Pages（约 1 分钟）。
+
+> 本机 `github.com:443` 直连被阻断，推送需走本地代理：
+> `git -c http.proxy=http://127.0.0.1:7890 -c https.proxy=http://127.0.0.1:7890 push`
+> （`api.github.com` 与 `gh` 命令不受影响。）
+
+上线前记得把 `index.html` 的 canonical / og:url / JSON-LD、`public/sitemap.xml`、`public/robots.txt` 里的 `prism-atelier.example.com` 换成实际域名——现在这些还是占位值。
+
 ## 结构
 
 ```
