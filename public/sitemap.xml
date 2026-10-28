@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  注意：把 prism-atelier.example.com 换成真实域名后再提交到 Google Search Console / Bing Webmaster。
+  单页站用锚点分区，sitemap 只列主 URL；若未来拆出独立案例页，为每个案例新增 <url> 条目。
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://prism-atelier.example.com/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

@@ -1,0 +1,8 @@
+# PRISM ATELIER 棱镜工作室
+# 允许所有主流搜索引擎，含图像预览
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# 站点地图
+Sitemap: https://prism-atelier.example.com/sitemap.xml

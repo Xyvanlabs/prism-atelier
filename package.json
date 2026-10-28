@@ -1,0 +1,24 @@
+{
+  "name": "prism-atelier",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "PRISM ATELIER — 浅色玻璃拟态 + 重度 WebGL 折射的独立设计工作室站",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173 --strictPort"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.0",
+    "@react-three/fiber": "^9.3.0",
+    "framer-motion": "^12.23.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^7.1.0"
+  }
+}
